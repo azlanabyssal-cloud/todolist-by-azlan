@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary Meta -->
+    <title>To-DoList by Azlan — Organize. Focus. Achieve.</title>
+    <meta name="description" content="A flagship productivity PWA: tasks, projects, calendar, and offline sync — all in one beautiful app." />
+    <meta name="author" content="To-DoList by Azlan" />
+    <meta name="keywords" content="todo, tasks, productivity, planner, calendar, PWA" />
+
+    <!-- PWA / Theme -->
+    <meta name="theme-color" content="#6366f1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#4338ca" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="To-DoList by Azlan" />
+    <meta name="application-name" content="To-DoList by Azlan" />
+    <meta name="msapplication-TileColor" content="#6366f1" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://todolist-azlan.app/" />
+    <meta property="og:title" content="To-DoList by Azlan — Organize. Focus. Achieve." />
+    <meta property="og:description" content="A flagship productivity PWA. Install directly from Chrome — no app store required." />
+    <meta property="og:image" content="/screenshots/desktop.png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="800" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="To-DoList by Azlan — Organize. Focus. Achieve." />
+    <meta name="twitter:description" content="A flagship productivity PWA. Install directly from Chrome — no app store required." />
+    <meta name="twitter:image" content="/screenshots/desktop.png" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/pwa-64x64.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/pwa-64x64.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png" />
+    <link rel="mask-icon" href="/icons/maskable-icon-512x512.png" color="#6366f1" />
+
+    <!-- Manifest (injected by vite-plugin-pwa) -->
+
+    <!-- Fonts — preconnect first, then load all 6 families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Splash Screens (iOS) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link
+      rel="apple-touch-startup-image"
+      href="/splash/apple-splash-2048-2732.png"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+    />
+  </head>
+  <body class="antialiased">
+    <noscript>
+      <div style="padding:2rem;text-align:center;font-family:sans-serif;">
+        To-DoList by Azlan requires JavaScript. Please enable it in your browser settings.
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
