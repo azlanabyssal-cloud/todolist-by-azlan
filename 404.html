@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>To-DoList by Azlan</title>
+  <script>
+    // SPA routing on GitHub Pages: store the intended URL, redirect to app root.
+    // The app's index.html will restore the URL via history.replaceState.
+    sessionStorage.setItem('spa_redirect', window.location.href);
+    var parts = window.location.pathname.split('/');
+    // Keep first 2 segments (['', 'repo-name']) as the project root
+    var root = window.location.protocol + '//' + window.location.host +
+               (parts.length > 2 ? parts.slice(0, 2).join('/') + '/' : '/');
+    window.location.replace(root);
+  </script>
+</head>
+<body>Loading…</body>
+</html>
