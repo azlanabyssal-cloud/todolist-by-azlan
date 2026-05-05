@@ -18,8 +18,8 @@ export default defineConfig({
       registerType: 'prompt',
       injectRegister: false,
       manifest: {
-        name: 'ZenDone — Focus. Flow. Done.',
-        short_name: 'ZenDone',
+        name: 'To-DoList by Azlan — Organize. Focus. Achieve.',
+        short_name: 'To-DoList by Azlan',
         description: 'A flagship productivity PWA: tasks, projects, calendar, and offline sync — all in one beautiful app.',
         start_url: '/',
         scope: '/',
