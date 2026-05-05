@@ -162,8 +162,11 @@ export default function App() {
     setSplashDone(true)
   }
 
+  // Vite injects BASE_URL from vite.config `base` — '/' locally/Vercel, '/todolist-by-azlan/' on GitHub Pages
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || undefined
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <ThemeSync />
 
       {/* Cinematic intro — shown once per browser session */}

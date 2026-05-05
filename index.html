@@ -48,6 +48,17 @@
 
     <!-- Manifest (injected by vite-plugin-pwa) -->
 
+    <!-- GitHub Pages SPA: restore URL that was encoded in 404.html -->
+    <script>
+      (function () {
+        var r = sessionStorage.getItem('spa_redirect');
+        if (r && r !== window.location.href) {
+          sessionStorage.removeItem('spa_redirect');
+          window.history.replaceState(null, '', r);
+        }
+      })();
+    </script>
+
     <!-- Fonts — preconnect first, then load all 6 families -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
